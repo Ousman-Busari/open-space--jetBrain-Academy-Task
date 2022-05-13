@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script async src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Open Space</title>
+  </head>
+  <body>
+    <div class="space">
+      <div class="planet-area">
+        <img src="./images/mars.png" alt="planet mars" class="planet" />
+        <img
+          src="./images/rocket.png"
+          alt="a rocket"
+          class="rocket"
+          id="rocket"
+        />
+      </div>
+      <div class="control-panel">
+        <div class="control-panel__inner">
+          <input
+            type="password"
+            id="passwoord"
+            placeholder="Enter password to unlock"
+          />
+          <input type="button" value="OK" id="ok" />
+          <div class="check-buttons">
+            <label
+              >Nozzle<br />
+              <input disabled type="checkbox" />
+            </label>
+            <label
+              >Pump<br />
+              <input disabled type="checkbox" />
+            </label>
+            <label
+              >Diffuser<br />
+              <input disabled type="checkbox" />
+            </label>
+            <label
+              >Oxidizer<br />
+              <input disabled type="checkbox" />
+            </label>
+            <label
+              >Coolant<br />
+              <input disabled type="checkbox" />
+            </label>
+            <label
+              >Fuel<br />
+              <input disabled type="checkbox" />
+            </label>
+          </div>
+          <div class="meters">
+            <div class="levers">
+              <input
+                disabled
+                id="acceleration"
+                min="300"
+                max="10000"
+                type="range"
+              />
+              <input disabled type="range" />
+              <input disabled type="range" />
+              <input disabled type="range" />
+              <input disabled id="direction" min="-90" max="90" type="range" />
+            </div>
+            <div class="levers-label">
+              <label class="range-label">a(m/s<sup>2</sup>)<br /> </label>
+              <label class="range-label">v(m/s)<br /> </label>
+              <label class="range-label">T(N)<br /> </label>
+              <label class="range-label">M(kg)<br /> </label>
+              <label class="range-label">^ (rad)<br /> </label>
+            </div>
+          </div>
+          <input disabled type="button" value="Reset" />
+          <input disabled type="button" value="Launch" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
